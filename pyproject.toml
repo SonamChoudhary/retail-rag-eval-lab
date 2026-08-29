@@ -1,0 +1,20 @@
+[project]
+name = "retail-rag-eval-lab"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic>=1.2.0",
+    "chromadb>=1.5.9",
+    "pypdf>=6.16.2",
+    "pytest>=9.1.1",
+    "ragas>=0.4.3",
+    "ruff>=0.16.5",
+]
+
+[project.scripts]
+retail-rag-eval-lab = "retail_rag_eval_lab:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
