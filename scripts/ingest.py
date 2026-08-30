@@ -1,8 +1,10 @@
 """Download SEC 10-K and 10-Q filings for the retail RAG corpus."""
 import os
 from pathlib import Path
+
 from dotenv import load_dotenv
-from sec_edgar_downloader import Downloader 
+from sec_edgar_downloader import Downloader
+
 load_dotenv()
 
 TICKERS = ["WMT","TGT", "cost","KR"]
