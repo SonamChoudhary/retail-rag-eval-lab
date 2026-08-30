@@ -1,7 +1,8 @@
 from pathlib import Path
+
 from src.parsing import extract_text
 
-SAMPLE_FILING = Path("data/raw/sec-edgar-filings/WMT/10-Q/0000104169-21-000042/primary-document.html")
+SAMPLE_FILING = Path(__file__).parent / "fixtures" / "sample_filing.html"
 
 def test_extract_text_returns_nonempty_string():
     text = extract_text(SAMPLE_FILING)

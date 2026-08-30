@@ -1,6 +1,6 @@
 """parse SEC filing HTML into clean text """
-from pathlib import Path
 from bs4 import BeautifulSoup
+
 
 def extract_text(html_path):
     with open (html_path, encoding = "utf-8") as f:
