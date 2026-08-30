@@ -6,7 +6,7 @@ RAGAS-based evaluation comparing naive vs. improved retrieval.
 ## Problem
 
 Retail analysts and investors regularly need answers to specific questions
-buried across long, dense SEC filings (10-Ks and 10-Qs) — e.g., comparing
+buried across long, dense SEC filings (10-Ks and 10-Qs) - e.g., comparing
 inventory strategy language across competitors, or tracking how a company's
 risk factors changed year over year. This project builds a retrieval-augmented
 generation (RAG) system to answer natural-language questions grounded in a
@@ -21,7 +21,7 @@ Costco (COST), and Kroger (KR), pulled from SEC EDGAR via
 
 Filing structure notes:
 - 10-Ks reach the exhibits section at "Item 15. Exhibits"; 10-Qs reach it
-  at "Item 6. Exhibits" — item numbering is not consistent between form types.
+  at "Item 6. Exhibits" - item numbering is not consistent between form types.
 - Both form types end with a "SIGNATURES" heading shortly after exhibits.
 - Chunking excludes everything from "SIGNATURES" onward as boilerplate.
 
