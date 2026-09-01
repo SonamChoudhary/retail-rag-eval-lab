@@ -2551,6 +2551,7 @@ dependencies = [
     { name = "ragas" },
     { name = "ruff" },
     { name = "sec-edgar-downloader" },
+    { name = "tiktoken" },
 ]
 
 [package.metadata]
@@ -2564,6 +2565,7 @@ requires-dist = [
     { name = "ragas", specifier = ">=0.4.3" },
     { name = "ruff", specifier = ">=0.16.5" },
     { name = "sec-edgar-downloader", specifier = ">=5.1.0" },
+    { name = "tiktoken", specifier = ">=0.14.0" },
 ]
 
 [[package]]
