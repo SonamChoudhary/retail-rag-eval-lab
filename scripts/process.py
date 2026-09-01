@@ -21,7 +21,7 @@ def main():
             for i,chunk in enumerate(chunks):
                 record = {
                     "id": f"{ticker}_{form_type}_{filing_path.parent.name}_{i}",
-                    "ticker": ticker,
+                    "ticker": ticker.upper(),
                     "form_type": form_type,
                     "source_path": str(filing_path),
                     "chunk_index": i,
