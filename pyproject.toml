@@ -13,6 +13,7 @@ dependencies = [
     "ragas>=0.4.3",
     "ruff>=0.16.5",
     "sec-edgar-downloader>=5.1.0",
+    "tiktoken>=0.14.0",
 ]
 
 [project.scripts]

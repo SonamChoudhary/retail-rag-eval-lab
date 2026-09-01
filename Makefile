@@ -7,3 +7,6 @@ ingest:
 
 eval:
 	uv run python scripts/eval.py
+
+process:
+	uv run python -m scripts.process
