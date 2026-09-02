@@ -10,3 +10,6 @@ eval:
 
 process:
 	uv run python -m scripts.process
+
+embed:
+	uv run python -m scripts.embed
