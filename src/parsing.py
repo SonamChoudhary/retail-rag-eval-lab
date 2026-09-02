@@ -20,7 +20,7 @@ def extract_text(html_path):
 
     text = soup.get_text(separator="\n")
 
-    cutoff = text.upper().find("SIGNATURES")
+    cutoff = text.upper().rfind("SIGNATURES")
     if cutoff != -1:
         text=text[:cutoff]
     
