@@ -10,7 +10,7 @@
   "question": "What did Target's Q2 FY2024 10-Q identify as a driver of higher digital fulfillment and supply chain costs?",
   "source_filings": ["data/raw/sec-edgar-filings/TGT/10-Q/0000027419-24-000152/primary-document.html"],
   "notes": "VERIFIED. Filing attributes higher digital fulfillment & supply chain costs to an increase in digital volume and new supply chain facilities coming online - found in the gross margin rate discussion, not a formal 'Risk Factors' section."
-}
+},
   {
     "id": "q3",
     "question": "What was Costco's total membership fee revenue in fiscal year 2022, and how much did it grow year-over-year?",
