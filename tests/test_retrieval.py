@@ -1,13 +1,9 @@
-from pathlib import Path
-
 import pytest
 
-from src.retrieval import retrieve
-
-CHROMA_DIR = Path("data/chroma")
+from src.retrieval import _collection, retrieve
 
 requires_chroma_data = pytest.mark.skipif(
-    not CHROMA_DIR.exists() or not any(CHROMA_DIR.iterdir()),
+    _collection.count() == 0,
     reason="Chroma vector store not populated - run `make embed` locally first",
 )
 
