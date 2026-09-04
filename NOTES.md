@@ -59,3 +59,43 @@ distinctive "membership fee" phrase that semantic search conflated with
 wrong-year filings. q6 (Costco warehouse count) still misses in both
 methods - deeper than the fusion method choice, worth investigating
 (possibly a chunking issue) before assuming retrieval method is the cause.
+
+## RAGAS evaluation findings (naive vs. hybrid)
+
+Faithfulness stable (0.88 -> 0.87): generation quality doesn't depend on
+which retrieval method fed it context, as expected.
+
+Context precision (0.25 -> 0.45) and context recall (0.30 -> 0.45) both
+improved substantially under hybrid search - independently confirms the
+custom Hit Rate/Precision@10 findings from the retrieval baseline
+comparison via a completely different measurement method (RAGAS's LLM
+judge vs. accession-number string matching).
+
+Answer relevancy dropped (0.29 -> 0.20), which initially looked like a
+regression but isn't necessarily one. Relevancy scores are bimodal - either
+~0.95-0.98 (a direct, confident answer) or exactly 0.00 (a hedge/refusal) -
+with almost no middle ground. This metric structurally can't distinguish
+"the system correctly admitted it lacked sufficient information" from "the
+system failed" - both score 0.00. Naive produced 3 confident answers / 7
+refusals; hybrid produced 2 confident answers / 8 refusals. Hybrid's higher
+refusal rate, despite better retrieval metrics, suggests hybrid sometimes
+retrieves *more* borderline-relevant content that the model correctly
+judges insufficient to answer confidently, rather than retrieving clearly
+wrong content it might have answered from anyway.
+
+One case worth flagging as a more subtle failure mode than a clean refusal:
+hybrid's q6 (Costco warehouse count) answered with "829 warehouses" from a
+different, wrong-period filing (an interim quarterly count) rather than the
+verified fiscal-year-end figure (838). This is a confident-sounding wrong
+answer using a real number from the wrong time period - arguably more
+concerning than an honest refusal, since it's easier to mistake for correct.
+Worth deeper investigation: whether this is a retrieval issue (right company,
+wrong-period chunk surfaced) or a generation issue (model conflating periods
+across multiple retrieved chunks).
+
+Overall conclusion: this project's generation layer is reliably faithful
+and appropriately cautious; hybrid search measurably improves retrieval
+precision/recall; but "improved retrieval" and "more confident answers"
+are not the same thing, and evaluating a RAG system requires metrics that
+can tell honest caution apart from actual failure - a real limitation of
+the standard RAGAS metric set as configured here.

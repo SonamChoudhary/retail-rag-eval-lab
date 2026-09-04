@@ -3,37 +3,43 @@
   "id": "q1",
   "question": "What macroeconomic risks did Walmart identify in its Q1 FY2026 10-Q as potential impacts on its business?",
   "source_filings": ["data/raw/sec-edgar-filings/WMT/10-Q/0000104169-25-000090/primary-document.html"],
-  "notes": "VERIFIED. Filing cites tariffs and trade restrictions, inflationary trends, currency fluctuations, macroeconomic swings affecting consumer confidence, employment volatility, and supply chain pressures - found under 'Recent Developments, Macroeconomic Conditions and Potential Impacts.'"
+  "notes": "VERIFIED. Filing cites tariffs and trade restrictions, inflationary trends, currency fluctuations, macroeconomic swings affecting consumer confidence, employment volatility, and supply chain pressures - found under 'Recent Developments, Macroeconomic Conditions and Potential Impacts.'",
+  "reference_answer":"Walmart identified macroeconomic risks including tariffs and trade restrictions, inflationary trends, currency fluctuations, macroeconomic swings affecting consumer confidence, employment volatility, and supply chain pressures."
 },
   {
   "id": "q2",
   "question": "What did Target's Q2 FY2024 10-Q identify as a driver of higher digital fulfillment and supply chain costs?",
   "source_filings": ["data/raw/sec-edgar-filings/TGT/10-Q/0000027419-24-000152/primary-document.html"],
-  "notes": "VERIFIED. Filing attributes higher digital fulfillment & supply chain costs to an increase in digital volume and new supply chain facilities coming online - found in the gross margin rate discussion, not a formal 'Risk Factors' section."
+  "notes": "VERIFIED. Filing attributes higher digital fulfillment & supply chain costs to an increase in digital volume and new supply chain facilities coming online - found in the gross margin rate discussion, not a formal 'Risk Factors' section.",
+  "reference_answer":"Higher digital fulfillment and supply chain costs were driven by an increase in digital volume and new supply chain facilities coming online."
 },
   {
     "id": "q3",
     "question": "What was Costco's total membership fee revenue in fiscal year 2022, and how much did it grow year-over-year?",
     "source_filings": ["data/raw/sec-edgar-filings/COST/10-K/0000909832-22-000021/primary-document.html"],
-    "notes": "VERIFIED. $4,224 million in membership fees for FY2022, a 9% increase over FY2021's $3,877 million. Driven by new member sign-ups and Executive membership upgrades."
+    "notes": "VERIFIED. $4,224 million in membership fees for FY2022, a 9% increase over FY2021's $3,877 million. Driven by new member sign-ups and Executive membership upgrades.",
+    "reference_answer":"Costco's membership fee revenue was $4,224 million in fiscal 2022, a 9% increase over fiscal 2021's $3,877 million."
   },
   {
   "id": "q4",
   "question": "What role does Kroger's 'Our Brands' private label strategy play in its overall sales, according to its FY2021 10-K?",
   "source_filings": ["data/raw/sec-edgar-filings/KR/10-K/0001558370-22-004595/primary-document.html"],
-  "notes": "VERIFIED. Our Brands products represented nearly $28 billion of Kroger's sales in 2021, with supermarkets stocking over 14,000 private label items on average across three tiers: Private Selection (premium), Kroger brand (majority of private label items), and a value tier."
+  "notes": "VERIFIED. Our Brands products represented nearly $28 billion of Kroger's sales in 2021, with supermarkets stocking over 14,000 private label items on average across three tiers: Private Selection (premium), Kroger brand (majority of private label items), and a value tier.",
+  "reference_answer":"Kroger's Our Brands products represented nearly $28 billion of its sales in 2021, with supermarkets stocking over 14,000 private label items across three tiers."
 },
   {
   "id": "q5",
   "question": "How much of Walmart International's and Sam's Club U.S.'s net sales came from eCommerce in Q1 FY2026 (three months ended April 30, 2025), and how did that compare to the prior year?",
   "source_filings": ["data/raw/sec-edgar-filings/WMT/10-Q/0000104169-25-000090/primary-document.html"],
-  "notes": "VERIFIED. Walmart International: approximately $7.7 billion in eCommerce net sales (Q1 FY2026) vs. $6.4 billion (Q1 FY2025). Sam's Club U.S.: approximately $3.3 billion (Q1 FY2026) vs. $2.6 billion (Q1 FY2025). Both segments show meaningful YoY eCommerce growth."
+  "notes": "VERIFIED. Walmart International: approximately $7.7 billion in eCommerce net sales (Q1 FY2026) vs. $6.4 billion (Q1 FY2025). Sam's Club U.S.: approximately $3.3 billion (Q1 FY2026) vs. $2.6 billion (Q1 FY2025). Both segments show meaningful YoY eCommerce growth.",
+  "reference_answer":"Walmart International's eCommerce net sales were approximately $7.7 billion (Q1 FY2026) versus $6.4 billion (Q1 FY2025); Sam's Club U.S. was approximately $3.3 billion versus $2.6 billion over the same period."
 },
 {
   "id": "q6",
   "question": "How many warehouses did Costco operate at the end of fiscal 2022, and how has that count grown over the prior two years?",
   "source_filings": ["data/raw/sec-edgar-filings/COST/10-K/0000909832-22-000021/primary-document.html"],
-  "notes": "VERIFIED. Costco operated 838 warehouses worldwide at August 28, 2022, up from 815 at August 29, 2021, and 795 at August 30, 2020. Average warehouse space is approximately 146,000 square feet."
+  "notes": "VERIFIED. Costco operated 838 warehouses worldwide at August 28, 2022, up from 815 at August 29, 2021, and 795 at August 30, 2020. Average warehouse space is approximately 146,000 square feet.",
+  "reference_answer":"Costco operated 838 warehouses worldwide at the end of fiscal 2022, up from 815 in fiscal 2021 and 795 in fiscal 2020."
 },
   {
   "id": "q7",
@@ -42,7 +48,8 @@
     "data/raw/sec-edgar-filings/TGT/10-Q/0000027419-23-000035/primary-document.html",
     "data/raw/sec-edgar-filings/TGT/10-Q/0000027419-24-000152/primary-document.html"
   ],
-  "notes": "VERIFIED. Inventory was $12,684 million at July 29, 2023, and $12,604 million at August 3, 2024 - a slight decrease of about $80 million year-over-year, despite total assets growing over the same period ($53,206M to $55,995M)."
+  "notes": "VERIFIED. Inventory was $12,684 million at July 29, 2023, and $12,604 million at August 3, 2024 - a slight decrease of about $80 million year-over-year, despite total assets growing over the same period ($53,206M to $55,995M).",
+"reference_answer":"Target's inventory was $12,684 million at July 29, 2023, and $12,604 million at August 3, 2024, a slight decrease of about $80 million year-over-year."
 },
   {
   "id": "q8",
@@ -51,7 +58,8 @@
     "data/raw/sec-edgar-filings/COST/10-K/0000909832-22-000021/primary-document.html",
     "data/raw/sec-edgar-filings/KR/10-K/0001558370-22-004595/primary-document.html"
   ],
-  "notes": "VERIFIED. Costco: direct membership fee model, $4,224 million in FY2022 membership fee revenue (9% YoY growth), 838 warehouses. Kroger: data-driven 'alternative profits' model - 96% of transactions tethered to a Kroger loyalty card, 20 years of data science investment enabling personalized experiences and high-margin alternative profits including data analytics and third-party media revenue (Kroger Precision Marketing) rather than a direct membership fee."
+  "notes": "VERIFIED. Costco: direct membership fee model, $4,224 million in FY2022 membership fee revenue (9% YoY growth), 838 warehouses. Kroger: data-driven 'alternative profits' model - 96% of transactions tethered to a Kroger loyalty card, 20 years of data science investment enabling personalized experiences and high-margin alternative profits including data analytics and third-party media revenue (Kroger Precision Marketing) rather than a direct membership fee.",
+  "reference_answer":"Costco monetizes customers directly through membership fees ($4,224 million in FY2022, 9% growth), while Kroger monetizes customer data through alternative profit streams, with 96% of transactions tied to a loyalty card and revenue from data analytics and media services like Kroger Precision Marketing."
 },
   {
   "id": "q9",
@@ -60,7 +68,8 @@
     "data/raw/sec-edgar-filings/WMT/10-Q/0000104169-25-000090/primary-document.html",
     "data/raw/sec-edgar-filings/KR/10-K/0001558370-22-004595/primary-document.html"
   ],
-  "notes": "VERIFIED. Walmart: 'everyday low prices, supported by everyday low costs' as a core financial priority (Company Performance Metrics section). Kroger: 'strategic price investments' as one lever in a 'balanced model,' offset by a cost savings program delivering $1 billion in annual savings for four consecutive years - a more selective/investment-based framing versus Walmart's blanket low-price positioning."
+  "notes": "VERIFIED. Walmart: 'everyday low prices, supported by everyday low costs' as a core financial priority (Company Performance Metrics section). Kroger: 'strategic price investments' as one lever in a 'balanced model,' offset by a cost savings program delivering $1 billion in annual savings for four consecutive years - a more selective/investment-based framing versus Walmart's blanket low-price positioning.",
+  "reference_answer":"Walmart frames its pricing strategy around 'everyday low prices, supported by everyday low costs', while Kroger uses 'strategic price investments' as one lever in a balanced model offset by a cost savings program delivering $1 billion in annual savings."
 },
 {
   "id": "q10",
@@ -69,6 +78,7 @@
     "data/raw/sec-edgar-filings/TGT/10-Q/0000027419-23-000035/primary-document.html",
     "data/raw/sec-edgar-filings/TGT/10-Q/0000027419-24-000152/primary-document.html"
   ],
-  "notes": "VERIFIED. 2023: lower digital fulfillment costs due to a decrease in digital sales and a shift to lower-cost same-day fulfillment; also flags rising inventory shrink as a persistent industry-wide issue. 2024: the trend reverses - higher digital fulfillment & supply chain costs due to an increase in digital volume and new supply chain facilities coming online. Shows digital volume declined in 2023 then grew again in 2024."
+"notes": "VERIFIED. 2023: lower digital fulfillment costs due to a decrease in digital sales and a shift to lower-cost same-day fulfillment; also flags rising inventory shrink as a persistent industry-wide issue. 2024: the trend reverses - higher digital fulfillment & supply chain costs due to an increase in digital volume and new supply chain facilities coming online. Shows digital volume declined in 2023 then grew again in 2024.",
+"reference_answer":"Target's digital fulfillment costs decreased in 2023 due to lower digital sales and a shift to same-day fulfillment, then increased in 2024 due to higher digital volume and new supply chain facilities coming online."
 }
 ]
