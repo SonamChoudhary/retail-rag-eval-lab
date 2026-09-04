@@ -33,7 +33,20 @@ Metric	Semantic (naive)	Hybrid (semantic + BM25)
 Hit Rate@10	70%	80%
 Avg Precision@10	15%	18%
 
-RAGAS end-to-end evaluation (faithfulness, answer relevancy, context precision/recall): TBD
+RAGAS end-to-end evaluation (faithfulness, answer relevancy, context precision/recall) RAGAS end-to-end evaluation (10 golden questions, naive vs. hybrid):
+
+| Metric | Naive | Hybrid |
+|---|---|---|
+| Faithfulness | 0.88 | 0.87 |
+| Answer Relevancy | 0.29 | 0.20 |
+| Context Precision | 0.25 | 0.45 |
+| Context Recall | 0.30 | 0.45 |
+
+Context precision/recall improvements independently confirm the custom
+retrieval metrics from the baseline comparison. Faithfulness stayed stable
+(generation doesn't depend on which retrieval method fed it). Answer
+relevancy dropped under hybrid - see NOTES.md for why this isn't
+necessarily bad news.
 
 ## What I'd improve with more time
 
