@@ -1,0 +1,298 @@
+{
+  "semantic": {
+    "metrics": {
+      "hit_rate": 0.7,
+      "avg_precision": 0.15
+    },
+    "results": [
+      {
+        "id": "q1",
+        "filing_results": [
+          {
+            "filing": "0000104169-25-000090",
+            "hit": true,
+            "rank": 9
+          }
+        ],
+        "precision_at_k": 0.1,
+        "any_hit": true
+      },
+      {
+        "id": "q2",
+        "filing_results": [
+          {
+            "filing": "0000027419-24-000152",
+            "hit": true,
+            "rank": 1
+          }
+        ],
+        "precision_at_k": 0.1,
+        "any_hit": true
+      },
+      {
+        "id": "q3",
+        "filing_results": [
+          {
+            "filing": "0000909832-22-000021",
+            "hit": false,
+            "rank": null
+          }
+        ],
+        "precision_at_k": 0.0,
+        "any_hit": false
+      },
+      {
+        "id": "q4",
+        "filing_results": [
+          {
+            "filing": "0001558370-22-004595",
+            "hit": true,
+            "rank": 1
+          }
+        ],
+        "precision_at_k": 0.4,
+        "any_hit": true
+      },
+      {
+        "id": "q5",
+        "filing_results": [
+          {
+            "filing": "0000104169-25-000090",
+            "hit": true,
+            "rank": 9
+          }
+        ],
+        "precision_at_k": 0.1,
+        "any_hit": true
+      },
+      {
+        "id": "q6",
+        "filing_results": [
+          {
+            "filing": "0000909832-22-000021",
+            "hit": false,
+            "rank": null
+          }
+        ],
+        "precision_at_k": 0.0,
+        "any_hit": false
+      },
+      {
+        "id": "q7",
+        "filing_results": [
+          {
+            "filing": "0000027419-23-000035",
+            "hit": false,
+            "rank": null
+          },
+          {
+            "filing": "0000027419-24-000152",
+            "hit": false,
+            "rank": null
+          }
+        ],
+        "precision_at_k": 0.0,
+        "any_hit": false
+      },
+      {
+        "id": "q8",
+        "filing_results": [
+          {
+            "filing": "0000909832-22-000021",
+            "hit": false,
+            "rank": null
+          },
+          {
+            "filing": "0001558370-22-004595",
+            "hit": true,
+            "rank": 1
+          }
+        ],
+        "precision_at_k": 0.3,
+        "any_hit": true
+      },
+      {
+        "id": "q9",
+        "filing_results": [
+          {
+            "filing": "0000104169-25-000090",
+            "hit": false,
+            "rank": null
+          },
+          {
+            "filing": "0001558370-22-004595",
+            "hit": true,
+            "rank": 1
+          }
+        ],
+        "precision_at_k": 0.2,
+        "any_hit": true
+      },
+      {
+        "id": "q10",
+        "filing_results": [
+          {
+            "filing": "0000027419-23-000035",
+            "hit": true,
+            "rank": 7
+          },
+          {
+            "filing": "0000027419-24-000152",
+            "hit": true,
+            "rank": 3
+          }
+        ],
+        "precision_at_k": 0.3,
+        "any_hit": true
+      }
+    ]
+  },
+  "hybrid": {
+    "metrics": {
+      "hit_rate": 0.8,
+      "avg_precision": 0.18
+    },
+    "results": [
+      {
+        "id": "q1",
+        "filing_results": [
+          {
+            "filing": "0000104169-25-000090",
+            "hit": false,
+            "rank": null
+          }
+        ],
+        "precision_at_k": 0.0,
+        "any_hit": false
+      },
+      {
+        "id": "q2",
+        "filing_results": [
+          {
+            "filing": "0000027419-24-000152",
+            "hit": true,
+            "rank": 5
+          }
+        ],
+        "precision_at_k": 0.1,
+        "any_hit": true
+      },
+      {
+        "id": "q3",
+        "filing_results": [
+          {
+            "filing": "0000909832-22-000021",
+            "hit": true,
+            "rank": 8
+          }
+        ],
+        "precision_at_k": 0.1,
+        "any_hit": true
+      },
+      {
+        "id": "q4",
+        "filing_results": [
+          {
+            "filing": "0001558370-22-004595",
+            "hit": true,
+            "rank": 1
+          }
+        ],
+        "precision_at_k": 0.4,
+        "any_hit": true
+      },
+      {
+        "id": "q5",
+        "filing_results": [
+          {
+            "filing": "0000104169-25-000090",
+            "hit": true,
+            "rank": 5
+          }
+        ],
+        "precision_at_k": 0.1,
+        "any_hit": true
+      },
+      {
+        "id": "q6",
+        "filing_results": [
+          {
+            "filing": "0000909832-22-000021",
+            "hit": false,
+            "rank": null
+          }
+        ],
+        "precision_at_k": 0.0,
+        "any_hit": false
+      },
+      {
+        "id": "q7",
+        "filing_results": [
+          {
+            "filing": "0000027419-23-000035",
+            "hit": false,
+            "rank": null
+          },
+          {
+            "filing": "0000027419-24-000152",
+            "hit": true,
+            "rank": 2
+          }
+        ],
+        "precision_at_k": 0.4,
+        "any_hit": true
+      },
+      {
+        "id": "q8",
+        "filing_results": [
+          {
+            "filing": "0000909832-22-000021",
+            "hit": false,
+            "rank": null
+          },
+          {
+            "filing": "0001558370-22-004595",
+            "hit": true,
+            "rank": 1
+          }
+        ],
+        "precision_at_k": 0.2,
+        "any_hit": true
+      },
+      {
+        "id": "q9",
+        "filing_results": [
+          {
+            "filing": "0000104169-25-000090",
+            "hit": false,
+            "rank": null
+          },
+          {
+            "filing": "0001558370-22-004595",
+            "hit": true,
+            "rank": 1
+          }
+        ],
+        "precision_at_k": 0.2,
+        "any_hit": true
+      },
+      {
+        "id": "q10",
+        "filing_results": [
+          {
+            "filing": "0000027419-23-000035",
+            "hit": true,
+            "rank": 1
+          },
+          {
+            "filing": "0000027419-24-000152",
+            "hit": true,
+            "rank": 6
+          }
+        ],
+        "precision_at_k": 0.3,
+        "any_hit": true
+      }
+    ]
+  }
+}
