@@ -26,12 +26,14 @@ Filing structure notes:
 - Chunking excludes everything from "SIGNATURES" onward as boilerplate.
 
 ## Approach
-
-_TBD - week 1-2 in progress_
+Parse -> chunk (~500 tokens, tiktoken) -> embed (sentence-transformers) -> store in Chroma -> retrieve -> generate answer (Claude, grounded strictly in retrieved context). Retrieval compared naive (semantic-only) vs. hybrid (semantic + BM25, fused via Reciprocal Rank Fusion).
 
 ## Results
+Metric	Semantic (naive)	Hybrid (semantic + BM25)
+Hit Rate@10	70%	80%
+Avg Precision@10	15%	18%
 
-_TBD_
+RAGAS end-to-end evaluation (faithfulness, answer relevancy, context precision/recall): TBD
 
 ## What I'd improve with more time
 
