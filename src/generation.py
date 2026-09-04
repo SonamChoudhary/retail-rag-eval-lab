@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 MODEL = "claude-haiku-4-5-20251001"
-_client = Anthropic(api_key = os.environ["ANTHROPIC_API_KEY"])
+_client = Anthropic(api_key = os.environ.get("ANTHROPIC_API_KEY"))
 
 def build_prompt(question, chunks):
     """Build a prompt combining the question with retrieved context."""
