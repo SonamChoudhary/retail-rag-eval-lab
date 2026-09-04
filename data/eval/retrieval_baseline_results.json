@@ -1,0 +1,156 @@
+{
+  "hit_rate": 0.7,
+  "avg_precision": 0.15,
+  "results": [
+    {
+      "id": "q1",
+      "question": "What macroeconomic risks did Walmart identify in its Q1 FY2026 10-Q as potential impacts on its business?",
+      "filing_results": [
+        {
+          "filing": "0000104169-25-000090",
+          "hit": true,
+          "rank": 9
+        }
+      ],
+      "precision_at_k": 0.1,
+      "any_hit": true
+    },
+    {
+      "id": "q2",
+      "question": "What did Target's Q2 FY2024 10-Q identify as a driver of higher digital fulfillment and supply chain costs?",
+      "filing_results": [
+        {
+          "filing": "0000027419-24-000152",
+          "hit": true,
+          "rank": 1
+        }
+      ],
+      "precision_at_k": 0.1,
+      "any_hit": true
+    },
+    {
+      "id": "q3",
+      "question": "What was Costco's total membership fee revenue in fiscal year 2022, and how much did it grow year-over-year?",
+      "filing_results": [
+        {
+          "filing": "0000909832-22-000021",
+          "hit": false,
+          "rank": null
+        }
+      ],
+      "precision_at_k": 0.0,
+      "any_hit": false
+    },
+    {
+      "id": "q4",
+      "question": "What role does Kroger's 'Our Brands' private label strategy play in its overall sales, according to its FY2021 10-K?",
+      "filing_results": [
+        {
+          "filing": "0001558370-22-004595",
+          "hit": true,
+          "rank": 1
+        }
+      ],
+      "precision_at_k": 0.4,
+      "any_hit": true
+    },
+    {
+      "id": "q5",
+      "question": "How much of Walmart International's and Sam's Club U.S.'s net sales came from eCommerce in Q1 FY2026 (three months ended April 30, 2025), and how did that compare to the prior year?",
+      "filing_results": [
+        {
+          "filing": "0000104169-25-000090",
+          "hit": true,
+          "rank": 9
+        }
+      ],
+      "precision_at_k": 0.1,
+      "any_hit": true
+    },
+    {
+      "id": "q6",
+      "question": "How many warehouses did Costco operate at the end of fiscal 2022, and how has that count grown over the prior two years?",
+      "filing_results": [
+        {
+          "filing": "0000909832-22-000021",
+          "hit": false,
+          "rank": null
+        }
+      ],
+      "precision_at_k": 0.0,
+      "any_hit": false
+    },
+    {
+      "id": "q7",
+      "question": "How did Target's inventory balance change between July 29, 2023 and August 3, 2024?",
+      "filing_results": [
+        {
+          "filing": "0000027419-23-000035",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "filing": "0000027419-24-000152",
+          "hit": false,
+          "rank": null
+        }
+      ],
+      "precision_at_k": 0.0,
+      "any_hit": false
+    },
+    {
+      "id": "q8",
+      "question": "How do Costco's and Kroger's business models differ in how they monetize customer relationships, based on their respective FY2021/FY2022 filings?",
+      "filing_results": [
+        {
+          "filing": "0000909832-22-000021",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "filing": "0001558370-22-004595",
+          "hit": true,
+          "rank": 1
+        }
+      ],
+      "precision_at_k": 0.3,
+      "any_hit": true
+    },
+    {
+      "id": "q9",
+      "question": "How do Walmart and Kroger each frame their pricing strategy in their respective filings?",
+      "filing_results": [
+        {
+          "filing": "0000104169-25-000090",
+          "hit": false,
+          "rank": null
+        },
+        {
+          "filing": "0001558370-22-004595",
+          "hit": true,
+          "rank": 1
+        }
+      ],
+      "precision_at_k": 0.2,
+      "any_hit": true
+    },
+    {
+      "id": "q10",
+      "question": "How did Target's digital fulfillment cost trends change between its 2023 and 2024 Q2 10-Qs?",
+      "filing_results": [
+        {
+          "filing": "0000027419-23-000035",
+          "hit": true,
+          "rank": 7
+        },
+        {
+          "filing": "0000027419-24-000152",
+          "hit": true,
+          "rank": 3
+        }
+      ],
+      "precision_at_k": 0.3,
+      "any_hit": true
+    }
+  ]
+}
