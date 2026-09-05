@@ -50,4 +50,8 @@ necessarily bad news.
 
 ## What I'd improve with more time
 
-_TBD_
+- Metadata-based year filtering (highest-priority, root-cause-backed). Traced a specific retrieval failure (q6, Costco warehouse count) through chunking -> retrieval -> generation and found the correct chunk was retrieved, just ranked outside the top-k window - crowded out by near-identical "warehouse count" boilerplate from other fiscal years. Fix: extract filing year from the SEC accession number as chunk metadata, detect year mentions in the question, and pre-filter candidates to that year via Chroma's metadata where clause before ranking - removing the cross-year competition entirely rather than trying to out-rank it.
+- BM25 stopword filtering - confirmed BM25 is diluted by generic, high-frequency terms ("fiscal," bare years); a filing-specific stopword list would sharpen its contribution to hybrid search.
+- Chunk-level date signals - prepending each chunk's filing period directly into its text (not just metadata) before embedding, so the embedding itself - not just Chroma's filter - can distinguish near- duplicate content across years.
+- Cross-encoder reranking - a heavier but more accurate alternative to RRF fusion at larger scale, where pre-filtering by metadata alone wouldn't be as cheap or sufficient as it is at this corpus's size (~90 filings).
+- A relevancy-aware eval metric - RAGAS's answer relevancy scored transparent, correctly-hedged answers (e.g., "here's what I found, but not the specific fact you asked for") identically to outright failures. Worth a custom metric or judge prompt that credits honest partial answers differently from silent failures.
