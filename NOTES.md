@@ -99,3 +99,40 @@ precision/recall; but "improved retrieval" and "more confident answers"
 are not the same thing, and evaluating a RAG system requires metrics that
 can tell honest caution apart from actual failure - a real limitation of
 the standard RAGAS metric set as configured here.
+
+## Case study: full three-layer root-cause diagnosis of q6 (Costco warehouses)
+
+q6 asks for Costco's fiscal-2022 year-end warehouse count and 3-year trend.
+Hybrid retrieval missed this in the Day 6 comparison. Traced through all
+three pipeline layers to find the actual cause:
+
+**Chunking (cleared):** the fact - "Costco operated 838, 815, and 795
+warehouses worldwide at August 28, 2022, August 29, 2021, and August 30,
+2020, respectively" - survives intact and cleanly stated in chunk 3 and
+chunk 57 of the correct filing (COST 10-K, accession 0000909832-22-000021).
+No chunk-boundary splitting issue.
+
+**Retrieval (root cause):** the correct chunk (57) IS retrieved by
+hybrid_retrieve() - but at rank 11, just outside the pipeline's actual
+top_k=5 cutoff used for generation. Ranks 1-10 are dominated by warehouse-
+count content from *other* fiscal years/quarters of the same company,
+occupying similar chunk positions (chunk 7-10) in each year's filing -
+the same recurring-boilerplate-across-years problem diagnosed on Day 3/6,
+now confirmed concretely rather than just inferred from aggregate metrics.
+
+**Generation (behaved correctly, not the problem):** given only wrong-
+period chunks, the model reported five genuinely accurate, correctly-cited
+quarterly warehouse counts it found (829 on 5/8/22, 828 on 2/13/22, 874,
+876, 921) and explicitly stated the context didn't contain the specific
+fiscal-year-end figure asked for. RAGAS scored this faithfulness=1.0 -
+appropriately, since nothing was fabricated. Answer relevancy scored 0.00
+despite this being a transparent, honest, partially-useful response - the
+metric structurally can't distinguish "correctly hedged with real
+supporting detail" from "failed outright."
+
+**Conclusion:** this is a retrieval problem with a precise, evidenced fix -
+not a vague "improve retrieval" but specifically "surface the right
+fiscal-year's chunk when several years compete on similar boilerplate
+structure." Confirms the metadata/date-aware retrieval improvement (see
+README) as the correctly-targeted next step, backed by a fully-traced
+example rather than aggregate statistics alone.
